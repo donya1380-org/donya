@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:guitarist
+  greeting:music
+    runs-on: ubuntu-latest
+    steps:3
+    - uses: actions/first-interaction@v1
+      with:note pad++
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Message that will be displayed on users'' first issue'
+        pr-message: 'Message that will be displayed on users'' first pr'
